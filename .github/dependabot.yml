@@ -4,27 +4,15 @@ updates:
   directory: "/"
   schedule:
     interval: daily
-  open-pull-requests-limit: 10
   labels:
   - dependencies
   commit-message:
     prefix: fix
     include: scope
-- package-ecosystem: github-actions
-  directory: "/"
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 10
-  labels:
-  - dependencies
-  commit-message:
-    prefix: ci
-    include: scope
 - package-ecosystem: gradle
   directory: "/tests"
   schedule:
     interval: daily
-  open-pull-requests-limit: 10
   labels:
   - dependencies
   commit-message:
