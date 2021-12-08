@@ -1,10 +1,7 @@
-[![Project status](https://badgen.net/badge/project%20status/stable%20%26%20actively%20maintaned?color=green)](https://github.com/homecentr/docker-grafana/graphs/commit-activity) [![](https://badgen.net/github/label-issues/homecentr/docker-grafana/bug?label=open%20bugs&color=green)](https://github.com/homecentr/docker-grafana/labels/bug) [![](https://badgen.net/github/release/homecentr/docker-grafana)](https://hub.docker.com/repository/docker/homecentr/grafana)
-[![](https://badgen.net/docker/pulls/homecentr/grafana)](https://hub.docker.com/repository/docker/homecentr/grafana) 
-[![](https://badgen.net/docker/size/homecentr/grafana)](https://hub.docker.com/repository/docker/homecentr/grafana)
-
-![CI/CD on master](https://github.com/homecentr/docker-grafana/workflows/CI/CD%20on%20master/badge.svg)
-![Regular Docker image vulnerability scan](https://github.com/homecentr/docker-grafana/workflows/Regular%20Docker%20image%20vulnerability%20scan/badge.svg)
-
+[![GitHub last commit](https://img.shields.io/github/last-commit/modem7/docker-grafana)](https://github.com/modem7/docker-grafana)
+[![Docker Pulls](https://img.shields.io/docker/pulls/modem7/docker-grafana)](https://hub.docker.com/r/modem7/docker-grafana) 
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/modem7/docker-grafana/latest)
+[![Build Status](https://drone.modem7.com/api/badges/modem7/docker-grafana/status.svg)](https://drone.modem7.com/modem7/docker-grafana)
 
 # HomeCentr - grafana
 
