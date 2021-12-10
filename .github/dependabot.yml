@@ -9,12 +9,3 @@ updates:
   commit-message:
     prefix: fix
     include: scope
-- package-ecosystem: gradle
-  directory: "/tests"
-  schedule:
-    interval: daily
-  labels:
-  - dependencies
-  commit-message:
-    prefix: chore
-    include: scope
