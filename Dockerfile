@@ -1,4 +1,4 @@
-FROM grafana/grafana:8.3.4 as original
+FROM grafana/grafana:8.3.5 as original
 
 FROM homecentr/base:3.4.0-alpine
 
