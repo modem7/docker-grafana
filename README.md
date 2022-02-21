@@ -2,6 +2,7 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/modem7/docker-grafana)](https://hub.docker.com/r/modem7/docker-grafana) 
 ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/modem7/docker-grafana/latest)
 [![Build Status](https://drone.modem7.com/api/badges/modem7/docker-grafana/status.svg)](https://drone.modem7.com/modem7/docker-grafana)
+[![GitHub last commit](https://img.shields.io/github/last-commit/modem7/docker-grafana)](https://github.com/modem7/docker-grafana)
 
 # HomeCentr - grafana
 
