@@ -1,6 +1,6 @@
 FROM grafana/grafana:8.4.5 as original
 
-FROM homecentr/base:3.4.0-alpine
+FROM modem7/docker-base
 
 ENV PATH="/usr/share/grafana/bin:$PATH"
 ENV GF_PATHS_CONFIG="/config/grafana.ini"
