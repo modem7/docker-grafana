@@ -1,0 +1,29 @@
+name: Update Drone.yml
+
+on:
+  push:
+    paths:
+      - 'Dockerfile'
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+        ref: ${{ github.event.pull_request.head.ref }}
+        token: ${{ secrets.GH_TOKEN}}
+    - run: |
+        VER=$(cat Dockerfile | grep -oP '(?<=FROM\sgrafana\/grafana:)+[0-9]+\.[0-9]+\.[0-9]+')
+        echo $VER
+        sed -i 's/[[:digit:]]\+\.[[:digit:]]\+\.[[:digit:]]\+/'$VER'/g' .drone.yml
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add .
+        git commit -m "generated"
+        git push
