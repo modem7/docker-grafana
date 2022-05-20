@@ -33,7 +33,7 @@ steps:
       from_secret: docker_password
     tags:
       - latest
-      - 8.5.2
+      - 8.5.3
 
 - name: slack
   image: themaz/drone-slack

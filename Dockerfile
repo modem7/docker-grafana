@@ -1,4 +1,4 @@
-FROM grafana/grafana:8.5.2 as original
+FROM grafana/grafana:8.5.3 as original
 
 FROM modem7/docker-base
 
