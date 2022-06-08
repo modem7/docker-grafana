@@ -1,11 +1,6 @@
 name: Update Drone.yml
 
 on:
-  push:
-    paths:
-      - 'Dockerfile'
-    branches:
-      - master
   workflow_dispatch:
 
 jobs:
