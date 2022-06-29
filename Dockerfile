@@ -1,4 +1,6 @@
-FROM grafana/grafana:9.0.1 as original
+# syntax = docker/dockerfile:1
+
+FROM grafana/grafana:9.0.2 as original
 
 FROM modem7/docker-base
 
