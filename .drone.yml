@@ -17,7 +17,7 @@ steps:
     - hadolint Dockerfile*
 
 - name: Latest  
-  image: plugins/docker
+  image: thegeeklab/drone-docker-buildx
   privileged: true
   settings:
     repo: modem7/docker-grafana
