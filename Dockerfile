@@ -40,7 +40,7 @@ VOLUME "/grafana"
 VOLUME "/logs"
 
 # Ping the metrics endpoint
-HEALTHCHECK --interval=15s --timeout=10s --start-period=20s --retries=3 CMD curl -k --fail http://127.0.0.1:3000/$HEALTHCHECK_ENDPOINT || exit 1
+HEALTHCHECK --interval=15s --timeout=10s --start-period=10s --retries=3 CMD curl --fSsk http://127.0.0.1:3000/$HEALTHCHECK_ENDPOINT || exit 1
 
 # HTTP User interface and API
 EXPOSE 3000
