@@ -11,7 +11,7 @@ ENV GF_PATHS_DATA="/grafana"
 ENV GF_PATHS_PLUGINS="/grafana/plugins"
 ENV GF_PATHS_LOGS="/logs"
 ENV GF_PATHS_HOME="/usr/share/grafana"
-ENV HEALTHCHECK_ENDPOINT="/metrics"
+ENV HEALTHCHECK_ENDPOINT="healthz"
 
 COPY --from=original /usr/share/grafana /usr/share/grafana
 COPY --from=original /run.sh /run.sh
