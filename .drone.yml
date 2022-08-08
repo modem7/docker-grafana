@@ -28,7 +28,7 @@ steps:
 
 - name: Latest  
   image: thegeeklab/drone-docker-buildx
-  privileged: true
+  # privileged: true
   settings:
     repo: ${DRONE_REPO}
     purge: true
