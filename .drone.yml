@@ -9,15 +9,15 @@ platform:
   arch: amd64
 
 steps:
-# - name: Trigger
-  # image: plugins/git
-  # commands:
-    # - test $DRONE_BUILD_EVENT = pull_request
-      # && DIFF_STRING=origin/${DRONE_COMMIT_BRANCH:-master}
-      # || DIFF_STRING=${DRONE_COMMIT_SHA}~
-    # - git --no-pager diff --name-only $DIFF_STRING
-      # | grep -q -e ^[.]drone[.]
-      # || exit 78
+- name: Trigger
+  image: plugins/git
+  commands:
+    - test $DRONE_BUILD_EVENT = pull_request
+      && DIFF_STRING=origin/${DRONE_COMMIT_BRANCH:-master}
+      || DIFF_STRING=${DRONE_COMMIT_SHA}~
+    - git --no-pager diff --name-only $DIFF_STRING
+      | grep -q -e ^[.]drone[.]
+      || exit 78
 
 - name: Lint Dockerfile
   image: hadolint/hadolint:latest-alpine
