@@ -1,5 +1,12 @@
 name: Update Drone.yml
 
+permissions:
+  contents: write
+  actions: write
+  checks: read
+  deployments: write
+  id-token: read
+
 on:
   workflow_dispatch:
 
