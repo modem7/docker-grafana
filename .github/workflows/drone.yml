@@ -8,6 +8,11 @@ permissions:
   id-token: read
 
 on:
+  push:
+    paths:
+      - 'Dockerfile'
+    branches:
+      - master
   workflow_dispatch:
 
 jobs:
