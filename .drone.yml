@@ -72,8 +72,9 @@ steps:
     status: [ success, failure ]
 
 trigger:
+  branch:
+    - master
   event:
     include:
     - push
     - custom
-#    - custom
