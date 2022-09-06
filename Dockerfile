@@ -1,6 +1,6 @@
 # syntax = docker/dockerfile:latest
 
-FROM grafana/grafana-oss:9.1.2 as original
+FROM grafana/grafana-oss:9.1.3 as original
 
 FROM modem7/docker-base
 
