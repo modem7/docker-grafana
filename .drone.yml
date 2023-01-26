@@ -47,7 +47,7 @@ steps:
       from_secret: docker_password
     tags:
       - latest
-      - 9.3.4
+      - 9.3.6
 
 - name: pushrm-dockerhub
   image: chko/docker-pushrm
